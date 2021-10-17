@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+
+  <header>
+    <div class="content">
+      <h1>IP Addres Tracker</h1>
+      <div class="input">
+      <input type="text" class="input_ip" placeholder="Search for any IP address or domain">
+      <img src="images/icon-arrow.svg" class="btn_search" alt="">
+      </div>
+
+        <p class="novalid">Invalid IP Address</p>
+      </div>
+  </header>
+
+
+  <div class="data">
+    <div class="data_content data_content1">
+      <h4>IP ADDRES</h4>
+      <p class="ip">192.2012.174.101</p>
+    </div>
+    <div class="data_content data_content1 data_content2">
+      <h4>LOCATION</h4>
+      <p class="city">Brooklyn, NY 10001</p>
+    </div>
+    <div class="data_content data_content1">
+      <h4>TIMEZONE</h4>
+      <p class="time-zone">UTC-05:00</p>
+    </div>
+    <div class="data_content">
+      <h4>ISP</h4>
+      <p class="isp">SpaceX<br/>
+        Starlink  
+      </p>
+    </div>
+  </div>
+
+  <div id="map">
+   
+  </div>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br/> 
+    Coded by <a href="https://github.com/roac3">Carlos Roa</a>.
+  </footer>
+
+
+  <script src="app.js"></script>
+ 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+</html>
