@@ -9,7 +9,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: blanchedalmond;
 }
 
 header{
@@ -218,5 +217,7 @@ footer a:hover{
         width: 100%;
     }
 
-
+    #map{
+        height: 800px;
+    }
 }

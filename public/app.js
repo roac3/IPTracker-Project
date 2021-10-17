@@ -44,27 +44,24 @@ addEventListener('load', ()=>{
 
         var ip = input_ip.value;
 
-        console.log(ip)
 
-        fetch("http://ip-api.com/json/"+ ip)
+        fetch("https://ipapi.co/"+ ip +"/json/")
         .then(country => country.json())
         .then(country => {
 
             country_ip = country;
 
-            console.log(country_ip);
-            console.log(country_ip.city);
-
-            if (country_ip.status == "success"){
+            if (country_ip.error != true){
 
                 search();
 
-                city.innerHTML = country_ip.country+", "+country_ip.city;
-                isp. innerHTML = country_ip.isp;
+                city.innerHTML = country_ip.country_name+", "+country_ip.city;
+                isp. innerHTML = country_ip.org;
                 ip_html.innerHTML = ip;
                 time.innerHTML = country_ip.timezone;
     
-                iniciarMapa(country_ip.lat, country_ip.lon);
+                iniciarMapa(country_ip.latitude, country_ip.longitude);
+                
             }else{
 
                 novalid.classList.add('show');
